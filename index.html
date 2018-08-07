@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>fireMessage</title>
+
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <!--PASTE SNIPPET HERE-->
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBWnj5vPSH54_aTOvjucmjLm9sIQDT0xps",
+        authDomain: "tiscord-91203.firebaseapp.com",
+        databaseURL: "https://tiscord-91203.firebaseio.com",
+        projectId: "tiscord-91203",
+        storageBucket: "",
+        messagingSenderId: "683412244290"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    
+
+    <!--custom files-->
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Add your name-->
+    <h1>TisCord</h1>
+
+    <!--This div will be populated with messages-->
+    <div class="allMessages">
+        
+    </div>
+    
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Your name (duh):</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">Text:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Enter</button>
+        </form>
+    </div>
+</body>
+</html>
